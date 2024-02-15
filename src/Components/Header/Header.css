@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+
+  background-color: var(--color-background);
+}
+
+.header {
+  gap: 8px;
+}
+
+.header__name {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.header__logo {
+  width: 56px;
+}
