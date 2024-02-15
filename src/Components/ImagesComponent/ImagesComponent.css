@@ -15,3 +15,12 @@
   cursor: pointer;
   transform: scale(1.05);
 }
+
+@media screen and (max-width: 480px) {
+  .images {
+    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+  }
+  .images__item {
+    width: 300px;
+  }
+}
