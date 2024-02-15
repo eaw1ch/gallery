@@ -109,6 +109,9 @@
   .element__btn-next img {
     width: 60px;
   }
+  .modal__window {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 550px) {
