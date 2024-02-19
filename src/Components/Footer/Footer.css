@@ -6,4 +6,15 @@ footer {
 
 .name-tag {
   color: white;
+  animation-name: appearance-nametag;
+  animation-duration: 3s;
+}
+
+@keyframes appearance-nametag {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }

@@ -22,17 +22,17 @@ const Modal = ({ view, setView, photo, setPhoto }) => {
   }, [photo]);
 
   const closePhoto = () => {
-    setView(false);
+    return setView(false);
   };
 
   const prevPhoto = () => {
     if (photo.id > 1) {
-      setPhoto((prevState) => ({
+      return setPhoto((prevState) => ({
         ...prevState,
         id: Number(photo.id) - 1
       }));
     } else {
-      setPhoto((prevState) => ({
+      return setPhoto((prevState) => ({
         ...prevState,
         id: images.length
       }));
@@ -41,12 +41,12 @@ const Modal = ({ view, setView, photo, setPhoto }) => {
 
   const nextPhoto = () => {
     if (photo.id < images.length) {
-      setPhoto((prevState) => ({
+      return setPhoto((prevState) => ({
         ...prevState,
         id: Number(photo.id) + 1
       }));
     } else {
-      setPhoto((prevState) => ({
+      return setPhoto((prevState) => ({
         ...prevState,
         id: 1
       }));

@@ -9,11 +9,33 @@
   width: 400px;
   border-radius: 10px;
   transition: all 0.5s ease;
+
+  animation-name: appearance-photo;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .images__item:hover {
   cursor: pointer;
   transform: scale(1.05);
+}
+
+@keyframes appearance-photo {
+  0% {
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+  }
+  100% {
+    width: 400px;
+    height: 225px;
+  }
 }
 
 @media screen and (max-width: 480px) {
